@@ -4,8 +4,7 @@
 //  Created by MJ (Ruit) on 1/1/19.
 //
 
-#ifndef KittyMemory_h
-#define KittyMemory_h
+#pragma once
 
 #include <stdio.h>
 #include <string>
@@ -26,7 +25,6 @@
 
 
 #define EMPTY_VEC_OFFSET std::vector<int>()
-
 
 namespace KittyMemory {
 
@@ -130,9 +128,8 @@ namespace KittyMemory {
         *reinterpret_cast<Type *>(finalPtr) = val;
         return true;
     }
-	
-	
-	/*
+
+    /*
      * Wrapper to dereference & get value of a pointer
      * Make sure to use the correct data type!
      */
@@ -144,9 +141,8 @@ namespace KittyMemory {
 
         return *reinterpret_cast<Type *>(ptr);
     }
-	
-	
-	/*
+
+    /*
      * Wrapper to dereference & set value of a pointer
      * Make sure to use the correct data type!, const objects won't work
      */
@@ -158,8 +154,7 @@ namespace KittyMemory {
         *reinterpret_cast<Type *>(ptr) = val;
         return true;
     }
-	
-	
+
     /*
      * Gets info of a mapped library in self process
      */
@@ -169,7 +164,6 @@ namespace KittyMemory {
     * Expects a relative address in a library
     * Returns final absolute address
     */
-    uintptr_t getAbsoluteAddress(const char *libraryName, uintptr_t relativeAddr);
+    uintptr_t
+    getAbsoluteAddress(const char *libraryName, uintptr_t relativeAddr, bool useCache = false);
 };
-
-#endif /* KittyMemory_h */

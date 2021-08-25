@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.van.modmenu">
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    package="com.van">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.van.modmenu.MainActivity">
+        <activity android:name="com.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,9 +19,10 @@
             </intent-filter>
         </activity>
         <service
-           android:name="com.van.modmenu.Menu"
+            android:name="com.Menu"
             android:enabled="true"
-            android:exported="false"/>
+            android:exported="false"
+            android:stopWithTask="true" />
     </application>
 
 </manifest>

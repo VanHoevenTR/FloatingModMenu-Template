@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     defaultConfig {
-        applicationId "com.mrikso.modmenu"
-        minSdkVersion 21
-        targetSdkVersion 28
+
+        minSdkVersion 19
+        targetSdkVersion 30
         versionCode 1
         versionName "2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -28,5 +28,5 @@ android {
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
     }
-    ndkVersion '22.0.7026061'
+    //ndkVersion '22.0.7026061'
 }
