@@ -4,6 +4,8 @@
 
 Simple floating mod menu to il2cpp and other native Android games.
 
+Arm64hook is not tested, i don't have arm64 phone
+
 **This project is for professional modders and programmers only. Do not use if you don't know how to
 use it**
 
@@ -180,10 +182,14 @@ emulator.
 
 # Credits
 
-- MrIkso https://github.com/MrIkso/FloatingModMenu (His first mod menu)
 - VanHoevenTR (Redesigned layout)
+- MrIkso https://github.com/MrIkso/FloatingModMenu (His first mod menu)
+- MJx0 https://github.com/MJx0/KittyMemory
+- LGLTeam https://github.com/LGLTeam/Android-Mod-Menu
+- Rprop https://github.com/Rprop/And64InlineHook
+- Obfuscate https://github.com/adamyaxley/Obfuscate
 
-Note: This is not Octowolve's menu. This is mine and the menu mod sources is based of MrIkso, I posted
+Note: This is not Octowolve's menu, this is mine and sources is based of MrIkso, I posted
 on [Platinmods](https://platinmods.com/threads/template-menu-free-for-mod-menu-il2cpp-and-other-native-games.67429/)
 since 2019 _before_ he uploaded in 2020, but he declined, refused to credit and claims his own 100%,
-but there is nothing I can do now.
+but there is nothing I can do now. If you believe I took his work, that's fine, but the fact i didn't.
