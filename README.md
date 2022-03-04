@@ -1,3 +1,5 @@
+## **This project has been discontined. Use LGL mod menu for up-to-date project https://github.com/LGLTeam/Android-Mod-Menu**
+
 # FloatingModMenu
 
 ![Screenshot](/images/ImageScr.png)
